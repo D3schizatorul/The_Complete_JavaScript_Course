@@ -65,7 +65,7 @@ if (BMIMark > BMIJohn) {
 
 ---
 
-Coding Challenge #3
+### Coding Challenge #3
 
 ```
 There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times.
@@ -106,7 +106,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 
 ---
 
-Coding Challenge #4
+### Coding Challenge #4
 
 ```
 Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. 

@@ -46,10 +46,10 @@ const game = {
   },
 };
 
-// 1. Destructure array
+// 1
 const [players1, players2] = game.players;
 
-// 2. Rest syntax
+// 2. Rest operator
 const [gk, ...fieldPlayers] = players1;
 
 // 3. Spread operator
@@ -58,7 +58,7 @@ const allPlayers = [...players1, ...players2];
 // 4.
 const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 
-// 5. Nested destructure
+// 5.
 const {
   odds: { team1, x: draw, team2 },
 } = game;
@@ -75,3 +75,34 @@ team1 > team2 && console.log('Team 2 is more likely to win');
 ```
 
 ---
+
+### Coding Challenge #2
+
+```javascript
+// 1.
+for (const [index, goalScorer] of game.scored.entries()) {
+  console.log(`Goal ${index + 1}: ${goalScorer}`);
+}
+
+// 2.
+let sum = 0;
+let average = 0;
+for (const odd of Object.values(game.odds)) {
+  sum += odd;
+}
+average = sum / Object.values(game.odds).length;
+console.log(average);
+
+// 3.
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamString = team === "x" ? "Draw" : `victory ${game[team]}`
+  console.log(`Odd of ${teamString} ${odd}`);
+}
+
+// Bonus
+const scorers = {};
+for (const player of game.scored) {
+  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
+}
+console.log(scorers);
+```

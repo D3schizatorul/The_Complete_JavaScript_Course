@@ -111,6 +111,8 @@ for (const player of game.scored) {
 console.log(scorers);
 ```
 
+---
+
 ### Coding Challenge #3
 
 ```javascript
@@ -147,6 +149,8 @@ for (const [min, event] of gameEvents) {
   console.log(`[${min <= 45 ? "FIRST" : "SECOND"} HALF] ${min}: ${event}`)
 }
 ```
+
+---
 
 ### Coding Challenge #4
 

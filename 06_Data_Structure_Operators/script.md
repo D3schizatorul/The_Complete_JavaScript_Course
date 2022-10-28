@@ -175,7 +175,7 @@ document.querySelector('button').addEventListener('click', function () {
 ```
 ---
 
-### Coding Challenge #4
+### Coding Challenge #5
 
 ```javascript
 const flights =
